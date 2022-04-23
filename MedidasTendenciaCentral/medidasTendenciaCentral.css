@@ -1,0 +1,233 @@
+:root {
+    --pink: #E6A4EC;
+    --very-light-pink: #F3E6F3;
+    --secondary-text-gray: #6f6f6f;
+    --primary-input: #F1F1F1;
+    --primary-button: #7E4E71;
+    --size-title: 1.8rem;
+    --size-subtitle: 1.6rem;
+    --size-text: 1.2rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgba(254, 245, 255, 1);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin-top: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 20px;
+    font-size: var(--size-title);
+}
+
+header p {
+    color: var(--secondary-text-gray);
+    font-size: var(--size-subtitle);
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+section {
+    background-color: var(--very-light-pink);
+    position: relative;
+    height: inherit;
+    border: 3px solid var(--pink);
+    margin: 20px;
+    border-radius: 28px;
+}
+
+section .title {
+    background-color: var(--pink);
+    min-width: 231px;
+    height: 35px;
+    position: absolute;
+    left: calc(50% - 115px);
+    border-radius: 0px 0px 50px 50px;
+}
+
+.title .title-promedioPonderado {
+    font-size: 1.2rem;
+}
+
+section h2 {
+    color: white;
+    font-size: var(--size-subtitle);
+    text-align: center;
+}
+
+section picture {
+    display: flex;
+    justify-content: center;
+}
+
+section picture img {
+    width: 130px;
+    height: 150px;
+    margin-top: 57px;
+}
+
+section form {
+    background-color: white;
+    border-radius: 28px 28px 25px 25px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section label {
+    color: var(--secondary-text-gray);
+    font-size: var(--size-text);
+}
+
+section input {
+    width: 150px;
+    height: 32px;
+    background-color: var(--primary-input);
+    border: 2px solid #D5D3D3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding-left: 10px;
+    margin: 20px 0px 40px 0px;
+    font-size: 0.8rem;
+}
+
+#salario-course,
+#salario-note,
+#salario-credit {
+    margin: 10px 0px 10px 0px;
+}
+
+#salario-credit {
+    margin-bottom: 50px;
+}
+
+#buttonPonderado {
+    margin-bottom: 50px;
+}
+
+section button {
+    background-color: var(--primary-button);
+    color: white;
+    font-size: 1rem;
+    width: 150px;
+    height: 50px;
+    border: 2px solid var(--pink);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+form p {
+    margin-top: 25px;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+}
+
+footer {
+    margin: 20px 0px;
+}
+
+footer p {
+    font-size: var(--sm);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer span {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+footer .linkedin {
+    background-image: url(./icons/linkedin-brands.svg);
+}
+
+footer .github {
+    background-image: url(./icons/github-brands.svg);
+    margin-left: 40px;
+}
+
+@media (min-width:560px) {
+    .moda-container form,
+    .promedioPonderado-container form {
+        height: 520px;
+    }
+}
+
+@media (min-width:840px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .moda-container form {
+        height: auto;
+    }
+    .promedioPonderado-container {
+        grid-column: 2;
+    }
+}
+
+@media (min-width:1384px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        justify-content: center;
+    }
+    .promedioPonderado-container {
+        grid-column-start: 1;
+        grid-column-end: -1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .title-promedioPonderado {
+        grid-column: 1 / 1;
+    }
+    .promedio-img {
+        display: grid;
+        place-content: center;
+    }
+    .promedio-img img {
+        width: 300px;
+        height: 300px;
+    }
+    .promedioPonderado-container form {
+        display: grid;
+        grid-column: 2 / 4;
+        place-items: center;
+    }
+}

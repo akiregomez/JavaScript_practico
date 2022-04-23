@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis salarial</title>
+    <link rel="stylesheet" href="./salario.css">
+
+    <body>
+        <header>
+            <h1>Cálculo del salario promedio del país</h1>
+            <p>Esta es una página interactiva donde podrás ingresar los datos reales de tu país y conocer el salario promedio </p>
+
+            <picture>
+                <source media="(min-width:1300px)" srcset="./img/img-large.jpg">
+                <source media="(min-width:800px)" srcset="./img/img-medium.jpg">
+                <img src="./img/img-small.jpg" alt="Utensillos de cocina en promoción">
+            </picture>
+        </header>
+
+        <main>
+            <section class="salarios-container">
+                <h2>Conoce el salario promedio de tu país</h2>
+
+                <form action="">
+                    <label for="input-pais">Ingresa el nombre de tu país</label>
+                    <input type="text" id="input-pais" placeholder="Ej: Ecuador">
+
+                    <label for="input-name">Ingresa el nombre de una persona</label>
+                    <input type="text" id="input-name" placeholder="Ej: Camila Andrade">
+
+                    <label for="input-salary">Ingresa el salario de esta persona</label>
+                    <input type="number" id="input-salary" placeholder="Ej: 500">
+
+                    <button id="moreData" type="button">Agregar más datos</button>
+
+                    <button type="button" onclick="calcularPromedioSalary()">Calcular salario promedio</button>
+
+                    <p id="mostrarSalarioPromedio"></p>
+                </form>
+            </section>
+
+        </main>
+        <footer>
+            <p>Elaborado por:</p>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/akiregomez/"><span class="linkedin"></span></a>
+                </li>
+                <li>
+                    <a href="https://github.com/akiregomez"><span class="github"></span></a>
+                </li>
+
+            </ul>
+        </footer>
+
+        <script src="./salario.js"></script>
+        <script src="./analisis.js"></script>
+    </body>
+
+</html>

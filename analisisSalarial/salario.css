@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-color: azure;
+}
+
+header {
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 20px 0px 30px 0px;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+header picture img {
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: #afadad 5px 4px 6px;
+}
+
+main .salarios-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+main .salarios-container h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.salarios-container form {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.salarios-container form label {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.salarios-container form input {
+    background-color: #e2e1e1;
+    border: none;
+    width: 250px;
+    height: 30px;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
+.salarios-container form #moreData {
+    margin-top: 25px;
+}
+
+.salarios-container form button {
+    width: 250px;
+    height: 40px;
+    margin-bottom: 25px;
+    background-color: rgb(1, 20, 75);
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 10px;
+}
+
+#mostrarSalarioPromedio {
+    color: #176feb;
+    font-size: 1.2rem;
+    margin: 30px 0px;
+}
+
+footer {
+    margin: 30px 0px;
+}
+
+footer p {
+    font-size: var(--sm);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer span {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+footer .linkedin {
+    background-image: url(./img/linkedin-brands.svg);
+}
+
+footer .github {
+    background-image: url(./img/github-brands.svg);
+    margin-left: 40px;
+}
+
+@media(min-width:600px) {
+    header p {
+        font-size: 1.4rem;
+        padding: 20px;
+    }
+    .salarios-container form label {
+        font-size: 1.4rem;
+        margin-bottom: 25px;
+    }
+    .salarios-container form input {
+        width: 300px;
+        height: 40px;
+        margin-bottom: 25px;
+        font-size: 1rem;
+    }
+    .salarios-container form button {
+        width: 300px;
+        height: 50px;
+        margin-bottom: 35px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width:1000px) {
+    header {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        align-content: center;
+    }
+    main {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        align-content: center;
+    }
+    body {
+        margin-top: 50px;
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 150px;
+        grid-template-areas: "inicio informacion" "final final";
+    }
+    header {
+        padding: 50px;
+    }
+    footer {
+        display: grid;
+        grid-area: final;
+    }
+}

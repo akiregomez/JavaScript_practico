@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient( 358.4deg, rgba(249, 151, 119, 1) -2.1%, rgba(98, 58, 162, 1) 90%);
+}
+
+header {
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: 'Libre Baskerville', serif;
+    color: rgb(237, 237, 241);
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 60px;
+    padding: 30px;
+}
+
+.container-cuadrado,
+.container-circulo,
+.container-triangulo {
+    display: grid;
+    width: 250px;
+    padding: 30px;
+    gap: 30px;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    background-color: papayawhip;
+    border-radius: 20px;
+    height: max-content;
+}
+
+.container-cuadrado h2,
+.container-circulo h2,
+.container-triangulo h2 {
+    font-weight: 500;
+    color: darkblue;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.container-cuadrado form,
+.container-circulo form,
+.container-triangulo form {
+    display: grid;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.container-cuadrado form label,
+.container-circulo form label,
+.container-triangulo form label {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgb(27, 27, 27);
+    text-align: center;
+}
+
+input {
+    width: 80%;
+    margin: 20px auto;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    background-color: rgba(164, 99, 144, 0.73);
+    cursor: pointer;
+    padding-left: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+button {
+    font-size: 1.4rem;
+    height: 40px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+    color: blue;
+    border: 1px solid rgb(105, 104, 104);
+}
+
+#perimetro_cuadrado,
+#area_cuadrado,
+#perimetro_triangulo,
+#area_triangulo,
+#perimetro_circulo,
+#area_circulo {
+    margin-top: 5px;
+    border: 2px solid #7939df;
+    width: 80%;
+    height: 50px;
+    justify-self: center;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    color: darkblue;
+    padding: 5px;
+    text-align: center;
+}
+
+@media(min-width:600px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "section1 section2" "container-triangulo container-triangulo";
+    }
+    .container-cuadrado,
+    .container-circulo {
+        width: inherit;
+        height: inherit;
+        display: grid;
+    }
+    .container-cuadrado h2,
+    .container-circulo h2 {
+        font-size: 2rem;
+        /* margin-bottom: 40px; */
+    }
+    .container-cuadrado form label,
+    .container-circulo form label {
+        font-size: 2rem;
+        /* margin-bottom: 40px; */
+    }
+    .container-cuadrado input,
+    .container-circulo input {
+        /* margin-bottom: 40px; */
+    }
+    .container-triangulo {
+        grid-area: container-triangulo;
+        width: 450px;
+        font-size: 2rem;
+    }
+}
+
+@media(min-width:1000px) {
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .container-triangulo {
+        grid-area: container-triangulo;
+    }
+}

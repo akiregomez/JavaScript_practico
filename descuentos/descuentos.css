@@ -1,0 +1,233 @@
+:root {
+    --primary-text: #212121;
+    --secondary-text: #757575;
+    --accent-color: #607D8B;
+    --primary-color: #9e9e9e;
+    --light-primary-color: #f5f5f5;
+    --sm: 1.2rem;
+    --md: 1.4rem;
+    --lg: 1.6rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: grid;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header picture {
+    display: flex;
+}
+
+header img {
+    width: 70%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-family: "Inter", sans-serif;
+    font-size: var(--lg);
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 25px;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+header p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: var(--md);
+    color: var(--secondary-text);
+    text-align: center;
+    margin: 10px;
+}
+
+header .new-products span {
+    font-weight: bold;
+    color: var(--primary-text);
+}
+
+main {
+    display: grid;
+    justify-items: center;
+}
+
+main h2 {
+    margin: 40px 0px;
+    font-size: var(--md);
+    background-color: var(--primary-color);
+    font-weight: 500;
+    color: var(--light-primary-color);
+    font-family: "Inter", sans-serif;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+main section {
+    gap: 50px;
+}
+
+main section form {
+    display: grid;
+    place-items: center;
+    margin: 20px;
+    padding: 0px 10px;
+    background-color: var(--light-primary-color);
+    box-shadow: 1px 2px 15px var(--accent-color);
+    border-radius: 10px;
+}
+
+main section form span {
+    margin: 20px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 10px;
+}
+
+main .product1 span {
+    background-image: url('https://images.pexels.com/photos/3827668/pexels-photo-3827668.jpeg?cs=srgb&dl=pexels-dima-valkov-3827668.jpg&fm=jpg');
+}
+
+main .product2 span {
+    background-image: url('https://images.pexels.com/photos/1148450/pexels-photo-1148450.jpeg?cs=srgb&dl=pexels-sharon-mccutcheon-1148450.jpg&fm=jpg');
+}
+
+main .product3 span {
+    background-image: url('https://images.pexels.com/photos/50676/coffee-mugs-t-brown-drink-50676.jpeg?cs=srgb&dl=pexels-pixabay-50676.jpg&fm=jpg');
+}
+
+main section form label {
+    color: var(--secondary-text);
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: var(--sm);
+    text-align: center;
+}
+
+main section form input {
+    height: 30px;
+    width: 208px;
+    margin: 15px 0px;
+    background-color: var(--light-primary-color);
+    border-style: none;
+    border: 1px solid var(--secondary-text);
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
+main section form button {
+    margin-top: 10px;
+    background-color: var(--accent-color);
+    border-style: none;
+    width: 208px;
+    height: 50px;
+    color: var(--light-primary-color);
+    font-size: var(--sm);
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+section .price,
+#precioConCupon {
+    border: 2px solid var(--accent-color);
+    width: 208px;
+    min-height: 80px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: var(--sm);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer span {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+footer .linkedin {
+    background-image: url(./icons/linkedin-brands.svg);
+}
+
+footer .github {
+    background-image: url(./icons/github-brands.svg);
+    margin-left: 40px;
+}
+
+@media (max-width: 300px) {
+    header img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px) {
+    header {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    header picture img {
+        width: 90%;
+        height: 300px;
+    }
+    header .header-information--container {
+        display: grid;
+        place-content: center;
+    }
+    main {
+        justify-items: inherit;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    main h2 {
+        grid-column: 1/4;
+    }
+}
+
+@media (min-width: 1000px) {
+    main h2 {
+        background-color: white;
+        color: var(--primary-text);
+        font-weight: bolder;
+        border-bottom: 2px solid var(--primary-color);
+    }
+    header .header-information--container h1 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y descuentos</title>
+    <link rel="stylesheet" href="./descuentos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <source media="(min-width:1300px)" srcset="./img/large.jpg">
+            <source media="(min-width:800px)" srcset="./img/medium.jpg">
+            <img src="./img/small.jpg" alt="Utensillos de cocina en promoción">
+        </picture>
+
+        <div class="header-information--container">
+            <h1>PRECIOS EXCLUSIVOS ONLINE</h1>
+            <p class="information">Tu cocina más completa que nunca!</p>
+            <p class="new-products">Nuevos productos de<br><span>LOUPSAUVAGE</span></p>
+        </div>
+    </header>
+
+    <main>
+        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+
+
+        <section class="product3">
+            <form action="">
+                <span></span>
+                <label for="InputPrice3">Escribe el precio de tu producto: </label>
+                <input type="number" id="InputPrice3">
+
+                <label for="InputDiscount3">Escribe el descuento de tu producto: </label>
+                <input type="number" id="InputDiscount3">
+
+                <button type="button" onclick="calcularDescuento3()">Calcular precio con descuento</button>
+                <br>
+                <div class="price">
+                    <p id="finalPrice3"></p>
+                </div>
+
+            </form>
+        </section>
+
+        <section class="product1">
+            <form action="">
+                <span></span>
+                <label for="InputPrice">Escribe el precio de tu producto: </label>
+                <input type="number" id="InputPrice">
+
+                <label for="InputDiscount">Escribe el descuento de tu producto: </label>
+                <input type="number" id="InputDiscount">
+
+                <button type="button" onclick="calcularDescuento()">Calcular precio con descuento</button>
+                <br>
+                <div class="price">
+                    <p id="finalPrice"></p>
+                </div>
+
+                <label for="InputCupon">Si tienes un cupón ingrésalo aquí</label>
+                <input type="text" id="InputCupon">
+                <button type="button" onclick="precioCupon()">Calcular</button>
+                <p id="precioConCupon"></p>
+            </form>
+        </section>
+
+        <section class="product2">
+            <form action="">
+                <span></span>
+                <label for="InputPrice2">Escribe el precio de tu producto: </label>
+                <input type="number" id="InputPrice2">
+
+                <label for="InputDiscount2">Escribe el descuento de tu producto: </label>
+                <input type="number" id="InputDiscount2">
+
+                <button type="button" onclick="calcularDescuento2()">Calcular precio con descuento</button>
+                <br>
+                <div class="price">
+                    <p id="finalPrice2"></p>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Elaborado por:</p>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/akiregomez/"><span class="linkedin"></span></a>
+            </li>
+            <li>
+                <a href="https://github.com/akiregomez"><span class="github"></span></a>
+            </li>
+
+        </ul>
+    </footer>
+    <script src="./descuentos.js"></script>
+</body>
+
+</html>
