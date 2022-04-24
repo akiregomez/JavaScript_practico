@@ -90,7 +90,7 @@ main .salarios-container h2 {
 .return {
     background-color: rgb(82, 124, 249);
     border-radius: 20px;
-    margin: 30px auto 30px auto;
+    margin: 30px auto 70px auto;
     width: 150px;
     height: 50px;
     box-shadow: rgb(241, 245, 245) 2px 2px 3px;
@@ -113,12 +113,8 @@ main .salarios-container h2 {
     color: rgb(250, 242, 13);
 }
 
-footer {
-    margin: 30px 0px;
-}
-
 footer p {
-    font-size: var(--sm);
+    font-size: var(1.4rem);
     text-align: center;
     margin-bottom: 20px;
 }
@@ -175,10 +171,10 @@ footer .github {
 
 @media (min-width:1000px) {
     header {
+        padding-left: 50px;
         display: grid;
-        width: 100%;
         height: 100%;
-        align-content: end;
+        align-content: center;
     }
     main {
         display: grid;
@@ -187,22 +183,21 @@ footer .github {
         align-content: center;
     }
     body {
-        margin-top: 50px;
         width: 100%;
         height: 100vh;
         display: grid;
-        grid-template-columns: 40% auto;
-        grid-template-rows: auto 80px 150px;
-        grid-template-areas: "inicio informacion" "return return" "final final";
-    }
-    header {
-        padding: 50px;
+        grid-template-columns: 1fr 1fr 30%;
     }
     footer {
         display: grid;
-        grid-area: final;
+        width: 100%;
+        height: 100%;
+        place-content: center;
+    }
+    footer p {
+        font-size: 1.4rem;
     }
     .return {
-        grid-area: return;
+        margin: 0px 0px 40px 0px;
     }
 }
