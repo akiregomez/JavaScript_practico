@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #3F51B5;
+    --light-primary-color: #C5CAE9;
+    --secondary-text: #757575;
+    --dark-primary-color: #303F9F;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Lora', serif;
+}
+
+header {
+    padding-top: 20px;
+    display: grid;
+    justify-items: center;
+}
+
+header h1 {
+    color: var(--primary-color);
+    text-align: center;
+    padding: 15px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'Acme', sans-serif;
+}
+
+span {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+header .computer-img {
+    background-image: url("https://images.pexels.com/photos/7818230/pexels-photo-7818230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: var(--divider-colors) 5px 6px 8px;
+}
+
+main .talleres-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.talleres-container section span {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -45px;
+    border: 1px solid var(--secondary-text);
+    box-shadow: var(--light-primary-color) 5px 2px 6px;
+    left: -46px;
+}
+
+.talleres-container section {
+    list-style: none;
+    min-height: 300px;
+    margin: 50px;
+    background-color: var(--dark-primary-color);
+    border-radius: 20px;
+    position: relative;
+}
+
+.talleres-container section a {
+    text-decoration: none;
+    color: white;
+    padding-top: 20px;
+    display: inline-block;
+    padding-top: 67px;
+    font-size: 1.4rem;
+    padding-left: 20px;
+}
+
+.talleres-container section a:hover {
+    color: rgb(0, 240, 252);
+}
+
+.talleres-container section p {
+    font-size: 1.2rem;
+    color: var(--light-primary-color);
+    padding: 20px;
+}
+
+.talleres-container .figurasGeometricas {
+    background-image: url('https://www.pngkit.com/png/detail/95-954738_geometric-shapes-in-3-dimensions-figuras-geometricas-3d.png');
+}
+
+.talleres-container .descuentos {
+    background-image: url('https://thumbs.dreamstime.com/b/ejemplo-de-la-etiqueta-d-de-las-compras-del-precio-78088517.jpg');
+}
+
+.talleres-container .mediasTendenciaCentral {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/462/007/non_2x/business-graph-3d-vector.jpg');
+}
+
+.talleres-container .analisisSalarial {
+    background-image: url('https://www.semana.com/resizer/BhWbVoXY4SJzo5DhfdX7QFWtG-I=/1200x675/filters:format(jpg):quality(50)//cloudfront-us-east-1.images.arcpublishing.com/semana/6OKW2STXGVGKJB5YPY3KL5VWQE.jpg');
+}
+
+footer {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer span {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+footer .linkedin {
+    background-image: url(./descuentos/icons/linkedin-brands.svg);
+}
+
+footer .github {
+    background-image: url(./descuentos/icons/github-brands.svg);
+    margin-left: 40px;
+}

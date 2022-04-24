@@ -6,31 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Curso JS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lora:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <header>
-        <h1>Talleres del curso práctico de JavaScript</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic labore consectetur voluptatum cumque voluptates molestias esse. Maxime tempore similique nisi nesciunt, eligendi officia beatae tempora, officiis fugiat veniam rem nostrum?</p>
+        <h1>TALLERES DEL CURSO PRÁCTICO DE JAVASCRIPT</h1>
+        <span class="computer-img"></span>
     </header>
-    <section>
-        <nav>
-            <ol>
-                <li>
-                    <a href="./figurasGeometricas/figuras.html">Figuras geométricas</a>
-                </li>
-                <li>
-                    <a href="./descuentos/descuentos.html">Descuentos y cupones</a>
-                </li>
-                <li>
-                    <a href="./MedidasTendenciaCentral/medidasTendenciaCentral.html">Medidas de tendencia  central</a>
-                </li>
-                <li>
-                    <a href="./analisisSalarial/salario.html">Análisis salarial</a>
-                </li>
-            </ol>
-        </nav>
-    </section>
+
+    <main>
+        <section class="talleres-container">
+            <section>
+                <span class="figurasGeometricas"></span>
+                <a id="figuras" href="./figurasGeometricas/figuras.html">Figuras geométricas</a>
+                <p>Calculo básicos para Cuadrados, Triángulos y Circulos.</p>
+            </section>
+            <section>
+                <span class="descuentos"></span>
+                <a href="./descuentos/descuentos.html">Descuentos y cupones</a>
+                <p>Calculo básicos para precios, descuentos y cupones de pago.</p>
+            </section>
+            <section>
+                <span class="mediasTendenciaCentral"></span>
+                <a href="./MedidasTendenciaCentral/medidasTendenciaCentral.html">Medidas de tendencia  central</a>
+                <p>Calculos básicos y avanzados.</p>
+            </section>
+            <section>
+                <span class="analisisSalarial"></span>
+                <a href="./analisisSalarial/salario.html">Análisis salarial</a>
+                <p>Calculo básicos para trabajar con Salarios (medianas y top 20%).</p>
+            </section>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Elaborado por:</p>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/akiregomez/"><span class="linkedin"></span></a>
+            </li>
+            <li>
+                <a href="https://github.com/akiregomez"><span class="github"></span></a>
+            </li>
+
+        </ul>
+    </footer>
 </body>
 
 </html>
