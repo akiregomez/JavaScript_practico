@@ -19,6 +19,32 @@ html {
     font-family: "Inter", sans-serif;
 }
 
+.return {
+    background-color: rgb(100, 100, 100);
+    border-radius: 20px;
+    margin: 40px auto 20px auto;
+    width: 140px;
+    height: 50px;
+    box-shadow: rgb(241, 245, 245) 2px 2px 3px;
+}
+
+.return a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 10px 10px 10px 20px;
+    display: inline-block;
+}
+
+.return:hover {
+    transform: rotate(-20deg);
+}
+
+.return a:hover {
+    color: rgb(0, 255, 221);
+}
+
 body {
     display: grid;
     max-width: 1100px;

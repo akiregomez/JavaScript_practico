@@ -36,10 +36,7 @@ header picture img {
 }
 
 main .salarios-container {
-    display: flex;
-    flex-direction: column;
-    min-width: 300px;
-    max-width: 600px;
+    display: grid;
 }
 
 main .salarios-container h2 {
@@ -88,6 +85,32 @@ main .salarios-container h2 {
     color: #176feb;
     font-size: 1.2rem;
     margin: 30px 0px;
+}
+
+.return {
+    background-color: rgb(82, 124, 249);
+    border-radius: 20px;
+    margin: 30px auto 30px auto;
+    width: 150px;
+    height: 50px;
+    box-shadow: rgb(241, 245, 245) 2px 2px 3px;
+}
+
+.return a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 10px;
+    display: inline-block;
+}
+
+.return:hover {
+    transform: rotate(-20deg);
+}
+
+.return a:hover {
+    color: rgb(250, 242, 13);
 }
 
 footer {
@@ -155,7 +178,7 @@ footer .github {
         display: grid;
         width: 100%;
         height: 100%;
-        align-content: center;
+        align-content: end;
     }
     main {
         display: grid;
@@ -168,9 +191,9 @@ footer .github {
         width: 100%;
         height: 100vh;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto 150px;
-        grid-template-areas: "inicio informacion" "final final";
+        grid-template-columns: 40% auto;
+        grid-template-rows: auto 80px 150px;
+        grid-template-areas: "inicio informacion" "return return" "final final";
     }
     header {
         padding: 50px;
@@ -178,5 +201,8 @@ footer .github {
     footer {
         display: grid;
         grid-area: final;
+    }
+    .return {
+        grid-area: return;
     }
 }

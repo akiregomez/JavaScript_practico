@@ -146,6 +146,32 @@ form p {
     height: 50px;
 }
 
+.return {
+    background-color: rgb(100, 100, 100);
+    border-radius: 20px;
+    margin: 30px auto 30px auto;
+    width: 140px;
+    height: 50px;
+    box-shadow: rgb(241, 245, 245) 2px 2px 3px;
+}
+
+.return a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 10px 10px 10px 20px;
+    display: inline-block;
+}
+
+.return:hover {
+    transform: rotate(-20deg);
+}
+
+.return a:hover {
+    color: rgb(250, 242, 13);
+}
+
 footer {
     margin: 20px 0px;
 }
